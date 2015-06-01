@@ -18,8 +18,8 @@
   }
 
   body {
-    padding-left: @unit * 2;
-    padding-right: @unit * 2;
+    padding-left: @unit;
+    padding-right: @unit;
     font-size: 16px;
   }
 
@@ -27,14 +27,24 @@
     img,
     iframe {
       max-width: 100vw;
+      margin-left: 0 - @unit;
+    }
+
+    blockquote {
+      margin: @unit 0 @unit @unit;
+      font-size: 20px;
     }
   }
 
+  .item-infos {
+    margin: @unit 0;
+  }
+
   h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
   .items h2 {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .hide-desktop {
